@@ -1,0 +1,20 @@
+{
+    "description": "A directive providing a switch component to hang boolean values.",
+    "homepage": "https://github.com/BrownPaperBag/switch",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "keywords": [
+        "Require",
+        "Model",
+        "AngularJS"
+    ],
+    "license": "MIT",
+    "main": "directives/switch.js",
+    "name": "switch",
+    "version": "0.0.1"
+}
