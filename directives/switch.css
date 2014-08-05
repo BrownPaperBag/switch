@@ -1,0 +1,219 @@
+.bpb-switch{
+
+	display: block;
+
+}
+
+.bpb-switch-area{
+
+	border: 1px solid #cccccc;
+
+	cursor: pointer;
+
+	display: inline-block;
+
+	position: relative;
+
+}
+
+.bpb-switch-loading,
+.bpb-switch-padding{
+
+	height: 22px;
+	width: 52px;
+
+	margin: 3px;
+
+	position: relative;
+
+}
+
+.bpb-switch-area .bpb-switch-padding .bpb-switch-button{
+
+	background-color: #3fb8e5;
+
+	height: 100%;
+	width: 40%;
+
+	position: absolute;
+
+}
+
+.bpb-switch-area.bpb-switch-on .bpb-switch-padding .bpb-switch-button{
+
+	right: 0px;
+
+}
+
+.bpb-switch-area.bpb-switch-disabled{
+
+	background-color: #e5e5e5;
+
+	cursor: default;
+
+}
+
+.bpb-switch-area.bpb-switch-disabled .bpb-switch-padding .bpb-switch-button{
+
+	background-color: #d4d4d4;
+
+}
+
+.bpb-switch-lb-left,
+.bpb-switch-lb-right,
+.bpb-switch-lb-unavailable{
+
+	font-size: 11px;
+	font-weight: bold;
+
+}
+
+.bpb-switch-lb-left,
+.bpb-switch-lb-right{
+
+	color: #888888;
+
+}
+
+.bpb-switch-lb-unavailable{
+
+	color: #666666;
+	
+}
+
+.bpb-switch-lb-left:not(:empty),
+.bpb-switch-lb-right:not(:empty){
+
+	display: inline-block;
+
+	width: 60px;
+
+}
+
+.bpb-switch-lb-left:not(:empty){
+
+	padding-right: 10px;
+
+	text-align: right;
+
+}
+
+.bpb-switch-lb-right:not(:empty){
+
+	padding-left: 10px;
+
+	text-align: left;
+
+}
+
+.bpb-switch-area,
+.bpb-switch-lb-left,
+.bpb-switch-lb-right{
+
+	vertical-align: middle;
+
+}
+
+.bpb-switch-loading{
+
+	text-align: center;
+
+	position: absolute;
+
+	left: 0px;
+	top: 0px;
+
+}
+
+.bpb-switch-loading-block{
+
+	background-color: #3fb8e5;
+
+	display: inline-block;
+
+	height: 8px;
+	width: 8px;
+
+	vertical-align: middle;
+
+}
+
+.bpb-switch-loading-block + .bpb-switch-loading-block{
+
+	margin-left: 7px;
+
+}
+
+.bpb-switch-loading-block-one,
+.bpb-switch-loading-block-two,
+.bpb-switch-loading-block-three{
+
+	animation: bpb-switch-loading-block-animation 0.7s infinite;
+	-webkit-animation: bpb-switch-loading-block-animation 0.7s infinite;
+
+}
+
+.bpb-switch-loading-block-one{
+
+	animation-delay: 0.0s;
+	-webkit-animation-delay: 0.0s;
+
+}
+
+.bpb-switch-loading-block-two{
+
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+
+}
+
+.bpb-switch-loading-block-three{
+
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+
+}
+
+@keyframes bpb-switch-loading-block-animation{
+    
+	0%{
+
+		opacity: 0; 
+
+	}
+
+	50%{
+
+		opacity: 1; 
+
+	}
+
+	100%{
+
+		opacity: 0; 
+
+	}
+
+}
+
+@-webkit-keyframes bpb-switch-loading-block-animation{
+    
+	0%{
+
+		opacity: 0; 
+
+	}
+
+	50%{
+
+		opacity: 1; 
+
+	}
+
+	100%{
+
+		opacity: 0; 
+
+	}
+
+}
