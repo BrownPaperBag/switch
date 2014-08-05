@@ -8,26 +8,20 @@ Example usage:
 ```HTML
 <script src="bower_components/switch/directives/switch.js"></script>
 
-<switch model="property" left-label="Left Label" right-label="Right Label" unavailable-label="Unavailable Label" isLoading="true"></switch>
-```
-
-or an alternative mode:
-
-```HTML
-<switch model="property" labels="{ left : 'Left Label', right : 'Right Label', unavailable : 'Unavailable' }" isLoading="true"></switch>
-
-```
-
-or a simpler mode:
-
-```HTML
-<switch model="property" labels="labels_property" isLoading="true"></switch>
-
+<switch ng-model="property" sw-state="-1" lb-left="Left Label" lb-right="Right Label" lb-unavailable="Unavailable Label"></switch>
 ```
 
 or the simplest mode:
 
 ```HTML
-<switch model="property"></switch>
+<switch ng-model="property"></switch>
 
 ```
+
+When:
+
+- ng Model: Property to bind a boolean value coming from the directive.
+- swState: State of the directive: unavailable (-1), loading (0), available (1).
+- lbLeft: Label to show at left when the directive get state available.
+- lbRight: Label to show at right when the directive get state available.
+- lbUnavailable: Label to show when the directive get state unavailable.
