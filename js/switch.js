@@ -38,12 +38,12 @@
 
                 if(angular.isUndefined($attributes.swState)){
 
-                    $scope.setState(1);
+                    $scope.state = 1;
 
                 }
                 else if(!$scope.state){
 
-                    $scope.setState(0);
+                    $scope.state = 0;
 
                 }
 
@@ -70,6 +70,7 @@
                         $scope.lastStateUpdate = new Date().getTime();
 
                     }
+                    else $scope.setState(newValue);
 
                 });
 

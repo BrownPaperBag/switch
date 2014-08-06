@@ -6,7 +6,7 @@ An angularjs directive providing a switch component to hang boolean values.
 Example usage:
 
 ```HTML
-<script src="bower_components/switch/directives/switch.js"></script>
+<script src="bower_components/switch/js/switch.js"></script>
 
 <switch ng-model="property" sw-state="-1" lb-left="Left Label" lb-right="Right Label" lb-unavailable="Unavailable Label"></switch>
 ```

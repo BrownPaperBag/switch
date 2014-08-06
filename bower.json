@@ -14,7 +14,7 @@
         "AngularJS"
     ],
     "license": "MIT",
-    "main": "directives/switch.js",
+    "main": "js/switch.js",
     "name": "switch",
     "version": "0.0.1"
 }
