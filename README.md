@@ -8,7 +8,7 @@ Example usage:
 ```HTML
 <script src="bower_components/switch/js/switch.js"></script>
 
-<switch ng-model="property" sw-state="-1" lb-left="Left Label" lb-right="Right Label" lb-unavailable="Unavailable Label"></switch>
+<switch ng-disabled ng-model="property" sw-state="-1" lb-left="Left Label" lb-right="Right Label" lb-unavailable="Unavailable Label"></switch>
 ```
 
 or the simplest mode:

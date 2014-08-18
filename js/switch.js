@@ -36,6 +36,12 @@
 
                 };
 
+                if(!angular.isUndefined($attributes.ngDisabled) && !$attributes.ngDisabled){
+
+                    $scope.isDisabled = true;
+
+                }
+
                 if(angular.isUndefined($attributes.swState)){
 
                     $scope.state = 1;
@@ -92,6 +98,8 @@
 
             scope : {
 
+                isDisabled : '=?ngDisabled',
+
                 state : '=?swState',
 
                 value : '=ngModel'
@@ -106,7 +114,7 @@
                     '</div>',
                     '<div ng-show="!isUnavailable">',
                         '<span class="bpb-switch-lb-left" ng-show="isAvailable">{{label.left}}</span>',
-                        '<div class="bpb-switch-area" ng-class="{ \'bpb-switch-on\' : value, \'bpb-switch-disabled\' : isLoading }" ng-click="isAvailable && (value = !value)">',
+                        '<div class="bpb-switch-area" ng-class="{ \'bpb-switch-on\' : value, \'bpb-switch-disabled\' : isDisabled || isLoading }" ng-click="isAvailable && !isDisabled && (value = !value)">',
                             '<div class="bpb-switch-padding">',
                                 '<div class="bpb-switch-button"></div>',
                             '</div>',
