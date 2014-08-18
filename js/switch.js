@@ -1,10 +1,6 @@
 +function(){
 
-    var module = angular.module('switch', [
-
-        // ...
-
-    ]);
+    var module = angular.module('switch', []);
 
     module.directive('switch', function($timeout){
 
@@ -15,20 +11,14 @@
                 $scope.label = {
 
                     left : $attributes.lbLeft,
-
                     right : $attributes.lbRight,
-
                     unavailable : $attributes.lbUnavailable
 
                 };
 
                 $scope.setState = function(state, preventEvent){
 
-                    if(!preventEvent){
-
-                        $scope.state = state;
-
-                    }
+                    if(!preventEvent) $scope.state = state;
 
                     $scope.isAvailable = state > 0;
                     $scope.isLoading = !state;
@@ -47,11 +37,7 @@
                     $scope.state = 1;
 
                 }
-                else if(!$scope.state){
-
-                    $scope.state = 0;
-
-                }
+                else if(!$scope.state) $scope.state = 0;
 
                 $scope.$watch('state', function(newValue, oldValue){
 
@@ -93,15 +79,12 @@
             },
 
             replace : true,
-
             restrict : 'E',
 
             scope : {
 
                 isDisabled : '=?ngDisabled',
-
                 state : '=?swState',
-
                 value : '=ngModel'
 
             },
