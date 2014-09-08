@@ -8,6 +8,13 @@
 
             link : function($scope, $element, $attributes){
 
+                $scope.icon = {
+
+                    left : $attributes.iconLeft,
+                    right : $attributes.iconRight
+
+                };
+
                 $scope.label = {
 
                     left : $attributes.lbLeft,
@@ -96,6 +103,7 @@
                         '<div class="bpb-switch-lb-unavailable">{{label.unavailable}}</div>',
                     '</div>',
                     '<div ng-show="!isUnavailable">',
+                        '<img class="bpb-switch-icon-left" ng-show="icon.left" ng-src="{{icon.left}}" />',
                         '<span class="bpb-switch-lb-left" ng-show="isAvailable">{{label.left}}</span>',
                         '<div class="bpb-switch-area" ng-class="{ \'bpb-switch-on\' : value, \'bpb-switch-disabled\' : isDisabled || isLoading }" ng-click="isAvailable && !isDisabled && (value = !value)">',
                             '<div class="bpb-switch-padding">',
@@ -108,6 +116,7 @@
                             '</div>',
                         '</div>',
                         '<span class="bpb-switch-lb-right" ng-show="isAvailable">{{label.right}}</span>',
+                        '<img class="bpb-switch-icon-right" ng-show="icon.right" ng-src="{{icon.right}}" />',
                     '</div>',
                 '</div>'
 

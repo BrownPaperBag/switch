@@ -22,6 +22,8 @@ When:
 
 - ng Model: Property to bind a boolean value coming from the directive.
 - swState: State of the directive: unavailable (-1), loading (0), available (1).
+- iconLeft: Path to show an icon at left when the directive get state available.
+- iconRight: Path to show an icon at right when the directive get state available.
 - lbLeft: Label to show at left when the directive get state available.
 - lbRight: Label to show at right when the directive get state available.
 - lbUnavailable: Label to show when the directive get state unavailable.
